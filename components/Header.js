@@ -3,7 +3,7 @@ import Image from 'next/image';
 const Header = () => {
   return (
     <div className="h-16 grid grid-cols-3">
-      <div className="flex gap-5 justify-center items-center font-semibold ">
+      <div className="flex gap-5 justify-center items-center font-semibold">
         <span className="cursor-pointer hover:border-b-2 hover:border-black">
           Kadın
         </span>
@@ -17,6 +17,7 @@ const Header = () => {
       <div className="flex justify-center items-center">
         <Image
           src="/logo.svg"
+          alt="logo"
           height="64px"
           width="64px"
           className="cursor-pointer"
