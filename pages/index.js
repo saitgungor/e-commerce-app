@@ -1,3 +1,12 @@
+import { Fragment } from "react";
+import Header from "../components/Header";
+import NotificationBar from "../components/NotificationBar";
+
 export default function Home() {
-  return <h1>Ecommerce app</h1>;
+  return (
+    <Fragment>
+      <NotificationBar />
+      <Header />
+    </Fragment>
+  );
 }
