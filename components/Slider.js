@@ -33,25 +33,39 @@ const Slider = () => {
 
   useEffect(() => {
     let sliderTime = setTimeout(() => {
-      console.log('timeout');
       changeSlide('increment');
     }, 6000);
 
     return () => {
       clearTimeout(sliderTime);
     };
-  }, [curSlide]);
+  }, [curSlide, changeSlide]);
 
   return (
     <div className="overflow-hidden flex w-full h-[700px] justify-center relative">
       <div className={`absolute w-full  h-[700px] ${slider1}`}>
-        <Image src="/slider/slider-1.jpg" layout="fill" objectFit="cover" />
+        <Image
+          src="/slider/slider-1.jpg"
+          alt="slider-1"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
       <div className={`absolute w-full  h-[700px] ${slider2}`}>
-        <Image src="/slider/slider-2.jpg" layout="fill" objectFit="cover" />
+        <Image
+          src="/slider/slider-2.jpg"
+          alt="slider-2"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
       <div className={`absolute w-full  h-[700px] ${slider3}`}>
-        <Image src="/slider/slider-3.jpg" layout="fill" objectFit="cover" />
+        <Image
+          src="/slider/slider-3.jpg"
+          alt="slider-3"
+          layout="fill"
+          objectFit="cover"
+        />
       </div>
       <div className="flex gap-2 absolute bottom-[5%]">
         <div
@@ -79,6 +93,7 @@ const Slider = () => {
       >
         <Image
           className="arrow-white"
+          alt="left-arrow"
           src="/slider/left-arrow.svg"
           height="64px"
           width="64px"
@@ -90,6 +105,7 @@ const Slider = () => {
       >
         <Image
           className="arrow-white"
+          alt="right-arrow"
           src="/slider/right-arrow.svg"
           height="64px"
           width="64px"
