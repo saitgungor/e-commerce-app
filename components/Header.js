@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Header = () => {
   return (
-    <div className="h-16 grid grid-cols-3">
+    <div className="h-12 grid grid-cols-3 ">
       <div className="flex gap-5 justify-center items-center font-semibold">
         <span className="cursor-pointer hover:border-b-2 hover:border-black">
           Kadın
@@ -16,17 +16,17 @@ const Header = () => {
       </div>
       <div className="flex justify-center items-center">
         <Image
-          src="/logo.svg"
+          src="/logo-new.svg"
           alt="logo"
-          height="64px"
-          width="64px"
+          height="42px"
+          width="74,6px"
           className="cursor-pointer"
         />
       </div>
       <div className="flex justify-center items-center">
         <div className="grid grid-cols-3 justify-between w-2/5 text-xs">
           <div className="flex flex-col items-center justify-center cursor-pointer">
-            <span className="">
+            <span>
               <Image
                 src="/icons/search.png"
                 alt="search-icon"
@@ -34,7 +34,7 @@ const Header = () => {
                 width="18px"
               />
             </span>
-            <span>Ara</span>
+            <span className="hover:font-semibold">Ara</span>
           </div>
 
           <div className="flex flex-col items-center justify-center cursor-pointer">
@@ -46,7 +46,7 @@ const Header = () => {
                 width="18px"
               />
             </span>
-            <span>Hesabım</span>
+            <span className="hover:font-semibold">Hesabım</span>
           </div>
 
           <div className="relative cursor-pointer">
