@@ -110,3 +110,8 @@ body {
     left: -100%;
   }
 }
+
+.arrow-white {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(113deg)
+    brightness(100%) contrast(103%);
+}
