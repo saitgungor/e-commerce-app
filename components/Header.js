@@ -1,9 +1,25 @@
 import Image from 'next/image';
+import { useState } from 'react';
 
-const Header = () => {
+const Header = props => {
+  const [className, setClassName] = useState('background-white');
+  const mouseOverHandler = () => {
+    setClassName('bg-white');
+  };
+
+  const mouseOutHandler = () => {
+    setClassName('background-white');
+  };
+
   return (
-    <div className="h-12 grid grid-cols-3 ">
-      <div className="flex gap-5 justify-center items-center font-semibold">
+    <div
+      className={`h-12 grid grid-cols-3 absolute w-full font-semibold ${
+        props.isHomePage ? className : 'bg-white'
+      }`}
+      onMouseOver={mouseOverHandler}
+      onMouseOut={mouseOutHandler}
+    >
+      <div className="flex gap-5 justify-center items-center ">
         <span className="cursor-pointer hover:border-b-2 hover:border-black">
           Kadın
         </span>
@@ -28,13 +44,13 @@ const Header = () => {
           <div className="flex flex-col items-center justify-center cursor-pointer">
             <span>
               <Image
-                src="/icons/search.png"
+                src="/icons/search-2.png"
                 alt="search-icon"
                 height="18px"
                 width="18px"
               />
             </span>
-            <span className="hover:font-semibold">Ara</span>
+            <span>Ara</span>
           </div>
 
           <div className="flex flex-col items-center justify-center cursor-pointer">
@@ -46,7 +62,7 @@ const Header = () => {
                 width="18px"
               />
             </span>
-            <span className="hover:font-semibold">Hesabım</span>
+            <span>Hesabım</span>
           </div>
 
           <div className="relative cursor-pointer">
