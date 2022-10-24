@@ -9,18 +9,18 @@ body {
 }
 
 .text_slider:first-child {
-  animation: text_slider_1 15s ease infinite;
+  animation: text_slider_1 20s ease infinite;
 }
 
 .text_slider:nth-child(2) {
-  animation: text_slider_2 15s ease infinite;
+  animation: text_slider_2 20s ease infinite;
 }
 
 .text_slider:nth-child(3) {
-  animation: text_slider_3 15s ease infinite;
+  animation: text_slider_3 20s ease infinite;
 }
 .text_slider:nth-child(4) {
-  animation: text_slider_4 15s ease infinite;
+  animation: text_slider_4 20s ease infinite;
 }
 
 @keyframes text_slider_1 {
@@ -111,7 +111,7 @@ body {
   }
 }
 
-.arrow-white {
+.background-white {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(113deg)
     brightness(100%) contrast(103%);
 }

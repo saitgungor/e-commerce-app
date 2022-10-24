@@ -1,5 +1,6 @@
 import { Fragment, useState, useEffect } from 'react';
 import Image from 'next/image';
+import Header from './Header';
 
 const Slider = () => {
   const [curSlide, setCurSlide] = useState(0);
@@ -92,7 +93,7 @@ const Slider = () => {
         onClick={() => changeSlide('decrement')}
       >
         <Image
-          className="arrow-white"
+          className="background-white"
           alt="left-arrow"
           src="/slider/left-arrow.svg"
           height="64px"
@@ -104,13 +105,14 @@ const Slider = () => {
         onClick={() => changeSlide('increment')}
       >
         <Image
-          className="arrow-white"
+          className="background-white"
           alt="right-arrow"
           src="/slider/right-arrow.svg"
           height="64px"
           width="64px"
         />
       </div>
+      <Header isHomePage={true} />
     </div>
   );
 };
