@@ -1,14 +1,30 @@
 import Image from 'next/image';
 import { useState } from 'react';
+import HeaderCollapseMenu from './HeaderCollapseMenu';
 
 const Header = props => {
   const [className, setClassName] = useState('background-white');
-  const mouseOverHandler = () => {
+  const [activeCategori, setActiveCategori] = useState('Kadın');
+  const [showMenu, setShowMenu] = useState(false);
+
+  const mouseOverHandler = event => {
+    console.log(event.target.id);
+    if (
+      event.target.id === 'Kadın' ||
+      event.target.parentNode.id === 'Kadın' ||
+      event.target.id === 'Erkek' ||
+      event.target.parentNode.id === 'Erkek' ||
+      event.target.id === 'Çocuk' ||
+      event.target.parentNode.id === 'Çocuk'
+    ) {
+      setShowMenu(true);
+      setActiveCategori(event.target.id || event.target.parentNode.id);
+    }
     setClassName('bg-white');
   };
-
   const mouseOutHandler = () => {
     setClassName('background-white');
+    setShowMenu(false);
   };
 
   return (
@@ -19,17 +35,24 @@ const Header = props => {
       onMouseOver={mouseOverHandler}
       onMouseOut={mouseOutHandler}
     >
-      <div className="flex gap-5 justify-center items-center ">
-        <span className="cursor-pointer hover:border-b-2 hover:border-black">
-          Kadın
-        </span>
-        <span className="cursor-pointer hover:border-b-2 hover:border-black">
-          Erkek
-        </span>
-        <span className="cursor-pointer hover:border-b-2 hover:border-black">
-          Çocuk
-        </span>
+      <div className="flex mx-20 justify-center items-center relative gap-5">
+        <div className="h-full flex items-center" id="Kadın">
+          <span className=" hover:border-black hover:border-b-2  cursor-pointer">
+            Kadın
+          </span>
+        </div>
+        <div className="h-full flex items-center" id="Erkek">
+          <span className=" hover:border-black hover:border-b-2  cursor-pointer">
+            Erkek
+          </span>
+        </div>
+        <div className="h-full flex items-center" id="Çocuk">
+          <span className=" hover:border-black hover:border-b-2  cursor-pointer">
+            Çocuk
+          </span>
+        </div>
       </div>
+      <HeaderCollapseMenu categori={activeCategori} showMenu={showMenu} />
       <div className="flex justify-center items-center">
         <Image
           src="/logo-new.svg"
@@ -44,7 +67,7 @@ const Header = props => {
           <div className="flex flex-col items-center justify-center cursor-pointer">
             <span>
               <Image
-                src="/icons/search-2.png"
+                src="/icons/search.png"
                 alt="search-icon"
                 height="18px"
                 width="18px"
