@@ -1,6 +1,6 @@
 const NotificationBar = () => {
   return (
-    <div className="bg-black text-white w-full h-5 overflow-hidden text-sm">
+    <div className="bg-[#ffbba0] text-[#0b0a18] w-full h-6 font-medium overflow-hidden text-sm">
       <div className="relative text-center h-5 flex items-center">
         <div className="text_slider absolute text-center w-full">
           {"14:00'a kadar verilen siparişleriniz aynı gün kargoda."}

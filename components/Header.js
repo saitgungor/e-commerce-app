@@ -29,7 +29,7 @@ const Header = props => {
 
   return (
     <div
-      className={`h-12 grid grid-cols-3 absolute w-full font-semibold ${
+      className={`h-16 grid grid-cols-3 absolute w-full font-semibold ${
         props.isHomePage ? className : 'bg-white'
       }`}
       onMouseOver={mouseOverHandler}
