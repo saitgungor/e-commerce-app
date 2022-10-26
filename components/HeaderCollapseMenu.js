@@ -44,7 +44,7 @@ const HeaderCollapseMenu = props => {
     <div
       onMouseOver={mouseInHandler}
       onMouseOut={mouseOutHandler}
-      className={`w-[40%] p-5 h-[500%]  justify-between absolute left-20 border-2  border-gray-300 bg-white text-black top-[100%] ${
+      className={`w-[40%] p-5 h-[400%]  justify-between absolute left-[10%] border-2  border-gray-300 bg-white text-black top-[100%] ${
         props.showMenu || showMenu ? 'flex' : 'hidden '
       } `}
     >
