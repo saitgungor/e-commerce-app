@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Raleway: ['Raleway'],
+        Narrow: ['PT Sans Narrow'],
       },
     },
   },
