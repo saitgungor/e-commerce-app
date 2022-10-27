@@ -25,7 +25,7 @@ const BestSellers = () => {
     setFirst(prev => prev - 1);
   };
   return (
-    <div className="w-100 h-[450px] mt-12 text-center">
+    <div className="w-full h-[60vh] mt-14 text-center">
       <h2 className="font-semibold text-4xl font-Narrow text-[#0b0a18] tracking-wider">
         Çok Satanlar
       </h2>

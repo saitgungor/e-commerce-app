@@ -3,7 +3,6 @@ import { useState } from 'react';
 const HeaderCollapseMenu = props => {
   let categories, imgURL, title;
   const [showMenu, setShowMenu] = useState(false);
-  // if (!props.showMenu && setShowMenu) setShowMenu(false);
 
   const mouseInHandler = () => {
     setShowMenu(true);
@@ -21,18 +20,18 @@ const HeaderCollapseMenu = props => {
       'Takı & Aksesuar',
       'Çanta',
     ];
-    imgURL = "bg-[url('/header-menu/kadın.jpg')]";
+    imgURL = "bg-[url('/header-menu/women.jpg')]";
   }
   if (props.categori === 'Erkek') {
     title = 'ERKEK';
     categories = ['Üst Giyim', 'Dış Giyim', 'İç Giyim', 'Aksesuar'];
-    imgURL = "bg-[url('/header-menu/erkek.jpg')]";
+    imgURL = "bg-[url('/header-menu/men.jpg')]";
   }
 
   if (props.categori === 'Çocuk') {
     title = 'ÇOCUK';
     categories = ['Giyim', 'Ayakkabı', 'Aksesuar'];
-    imgURL = "bg-[url('/header-menu/çocuk.jpg')]";
+    imgURL = "bg-[url('/header-menu/kids.jpg')]";
   }
 
   const listItems = categories.map(item => (
