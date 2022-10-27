@@ -6,6 +6,7 @@ import NotificationBar from '../components/NotificationBar';
 import Slider from '../components/Slider';
 import NewCollection from '../components/NewCollection';
 import BestSellers from '../components/BestSellers';
+import Collection from '../components/Collections';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Slider />
       <NewCollection />
       <BestSellers />
+      <Collection />
     </Fragment>
   );
 }
