@@ -43,7 +43,7 @@ const Slider = () => {
   }, [curSlide, changeSlide]);
 
   return (
-    <div className="overflow-hidden flex w-full h-[700px] justify-center relative">
+    <div className="overflow-hidden flex w-full h-[700px] justify-center relative ">
       <div className={`absolute w-full  h-[700px] ${slider1}`}>
         <Image
           src="/slider/slider-1.jpg"
@@ -112,7 +112,9 @@ const Slider = () => {
           width="64px"
         />
       </div>
-      <Header isHomePage={true} />
+      <div className="h-16 w-full absolute top-0">
+        <Header isHomePage={true} />
+      </div>
     </div>
   );
 };

@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         Raleway: ['Raleway'],
         Narrow: ['PT Sans Narrow'],
+        RobotoCondensed: ['Roboto Condensed'],
       },
     },
   },
