@@ -4,7 +4,12 @@ const ProductItem = props => {
   return (
     <div>
       <div className="w-full font-RobotoCondensed">
-        <Image src="/products/women/camel.jpg" width="1200px" height="1800px" />
+        <Image
+          src="/products/women/camel.jpg"
+          width="1200px"
+          height="1800px"
+          alt="women"
+        />
       </div>
       <div className="text-center font-medium  text-gray-800 text-lg flex justify-between ">
         {`${props.details.name} ${props.details.id}`}
