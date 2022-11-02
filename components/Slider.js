@@ -1,4 +1,5 @@
-import { Fragment, useState, useEffect } from 'react';
+import Link from 'next/link';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Header from './Header';
 
@@ -44,30 +45,36 @@ const Slider = () => {
 
   return (
     <div className="overflow-hidden flex w-full h-[700px] justify-center relative ">
-      <div className={`absolute w-full  h-[700px] ${slider1}`}>
-        <Image
-          src="/slider/slider-1.jpg"
-          alt="slider-1"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
-      <div className={`absolute w-full  h-[700px] ${slider2}`}>
-        <Image
-          src="/slider/slider-2.jpg"
-          alt="slider-2"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
-      <div className={`absolute w-full  h-[700px] ${slider3}`}>
-        <Image
-          src="/slider/slider-3.jpg"
-          alt="slider-3"
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
+      <Link href="/categories/women">
+        <div className={`absolute w-full h-[700px] cursor-pointer ${slider1}`}>
+          <Image
+            src="/slider/slider-1.jpg"
+            alt="slider-1"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+      </Link>
+      <Link href="/categories/kids">
+        <div className={`absolute w-full h-[700px] cursor-pointer ${slider2}`}>
+          <Image
+            src="/slider/slider-2.jpg"
+            alt="slider-2"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+      </Link>
+      <Link href="/categories/men">
+        <div className={`absolute w-full h-[700px] cursor-pointer ${slider3}`}>
+          <Image
+            src="/slider/slider-3.jpg"
+            alt="slider-3"
+            layout="fill"
+            objectFit="cover"
+          />
+        </div>
+      </Link>
       <div className="flex gap-2 absolute bottom-[5%]">
         <div
           className={`h-3 w-3  rounded-full border-white border cursor-pointer ${
