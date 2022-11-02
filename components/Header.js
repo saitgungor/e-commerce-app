@@ -43,14 +43,18 @@ const Header = props => {
             </Link>
           </div>
           <div className="h-full flex items-center" id="Erkek">
-            <span className=" hover:border-black hover:border-b-2  cursor-pointer">
-              Erkek
-            </span>
+            <Link href="/categories/men">
+              <span className=" hover:border-black hover:border-b-2  cursor-pointer">
+                Erkek
+              </span>
+            </Link>
           </div>
           <div className="h-full flex items-center" id="Çocuk">
-            <span className=" hover:border-black hover:border-b-2  cursor-pointer">
-              Çocuk
-            </span>
+            <Link href="/categories/kids">
+              <span className=" hover:border-black hover:border-b-2  cursor-pointer">
+                Çocuk
+              </span>
+            </Link>
           </div>
         </div>
         <HeaderCollapseMenu categori={activeCategori} showMenu={showMenu} />

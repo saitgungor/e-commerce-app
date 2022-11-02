@@ -8,7 +8,7 @@ import BestSellers from '../components/BestSellers';
 import Collection from '../components/Collections';
 import Footer from '../components/Footer';
 
-export default function Home() {
+export default function HomePage() {
   return (
     <Fragment>
       <Head>
