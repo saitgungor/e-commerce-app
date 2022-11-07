@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ProductItem from './ProductItem';
 
 const ProductList = props => {
-  const itemsPerPage = 12;
+  const itemsPerPage = 8;
   const pageCount = Math.ceil(props.products.length / itemsPerPage);
   const pageArr = [];
   const [curPage, setCurPage] = useState(1);

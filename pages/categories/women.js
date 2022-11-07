@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import Head from 'next/head';
 import BreadCrumb from '../../components/BreadCrumb';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
@@ -1418,6 +1419,10 @@ export default function WomenPage() {
 
   return (
     <Fragment>
+      <Head>
+        <title>Alışverişin merkezi</title>
+        <link rel="icon" href="/logo.svg" />
+      </Head>
       <NotificationBar />
       <Header isHomePage={false} />
       <BreadCrumb name="Kadın" />
