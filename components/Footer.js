@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <div className="w-full h-[45vh] text-sm 2xl:text-base mt-12 bg-[#585858] flex px-20 pt-16 text-white relative">
+    <div className="w-full h-[45vh] text-sm 2xl:text-base mt-12 bg-secondary2 flex px-20 pt-16 text-white relative">
       <div className="w-full h-full flex">
         <div className="w-1/3">
           <h4 className="font-semibold text-lg 2xl:text-xl hover:underline cursor-pointer">

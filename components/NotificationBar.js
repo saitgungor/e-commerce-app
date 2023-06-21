@@ -6,11 +6,11 @@ const NotificationBar = () => {
     'Yeni üyelere özel %10 Hoş geldin indirimi',
   ];
   return (
-    <div className="relative text-center h-full flex items-center bg-primary1 text-secondary1 w-full py-xl-12 min-h-[15px] font-medium overflow-hidden">
+    <div className="w-full h-[18px] md:h-[20px] lg:h-[22px] xl:h-[24px] bg-primary1 relative flex items-center text-center text-secondary1 font-medium overflow-hidden">
       {menuItems.map((item, index) => (
         <div
           key={index}
-          className="text_slider absolute text-center w-full text-xl-14"
+          className="w-full text_slider absolute text-center text-xl-14"
         >
           {item}
         </div>

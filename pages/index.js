@@ -7,6 +7,7 @@ import NewCollection from '../components/NewCollection';
 import BestSellers from '../components/BestSellers';
 import Collection from '../components/Collections';
 import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
         <link rel="icon" href="/logo.svg" />
       </Head>
       <NotificationBar />
+      <Header isHomePage />
       <Slider />
       <NewCollection />
       <BestSellers />

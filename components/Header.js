@@ -3,8 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import HeaderCollapseMenu from './HeaderCollapseMenu';
 
-const Header = props => {
-  const [className, setClassName] = useState('background-white');
+const Header = ({ isHomePage }) => {
   const [activeCategori, setActiveCategori] = useState('Kadın');
   const [showMenu, setShowMenu] = useState(false);
 
@@ -20,15 +19,13 @@ const Header = props => {
       setShowMenu(true);
       setActiveCategori(event.target.id || event.target.parentNode.id);
     }
-    setClassName('bg-white');
   };
   const mouseOutHandler = () => {
-    setClassName('background-white');
     setShowMenu(false);
   };
 
   return (
-    <div className={`h-16 w-full ${props.isHomePage ? className : 'bg-white'}`}>
+    <div className={`h-16 w-full ${!isHomePage && 'bg-white'}`}>
       <div
         className={`h-16 grid grid-cols-3 absolute w-full font-semibold z-[1] `}
         onMouseOver={mouseOverHandler}

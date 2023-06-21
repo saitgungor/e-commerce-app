@@ -119,9 +119,6 @@ const Slider = () => {
           width="64px"
         />
       </div>
-      <div className="h-16 w-full absolute top-0">
-        <Header isHomePage={true} />
-      </div>
     </div>
   );
 };
