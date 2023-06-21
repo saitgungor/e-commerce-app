@@ -26,7 +26,7 @@ const BestSellers = () => {
   };
   return (
     <div className="w-full h-[55vh] mt-12 text-center">
-      <h2 className="font-semibold text-4xl font-Narrow text-[#0b0a18] tracking-wider">
+      <h2 className="font-semibold text-4xl font-Narrow text-seconday1 tracking-wider">
         Çok Satanlar
       </h2>
       <div className="grid grid-cols-5 gap-5 w-full h-full">

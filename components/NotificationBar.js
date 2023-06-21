@@ -6,7 +6,7 @@ const NotificationBar = () => {
     'Yeni üyelere özel %10 Hoş geldin indirimi',
   ];
   return (
-    <div className="relative text-center h-full flex items-center bg-[#ffbba0] text-[#0b0a18] w-full py-xl-12 min-h-[15px] font-medium overflow-hidden">
+    <div className="relative text-center h-full flex items-center bg-primary1 text-secondary1 w-full py-xl-12 min-h-[15px] font-medium overflow-hidden">
       {menuItems.map((item, index) => (
         <div
           key={index}

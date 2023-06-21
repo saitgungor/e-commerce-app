@@ -15,7 +15,7 @@ const Sizes = props => {
               return (
                 <li
                   className={`border-2 rounded-full h-8 w-8 flex items-center justify-center cursor-pointer ${
-                    size === productSize && 'border-[2px] border-[#ffbba0]'
+                    size === productSize && 'border-[2px] border-primary1'
                   }`}
                   key={size}
                   id={size}

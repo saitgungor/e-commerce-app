@@ -6,6 +6,10 @@ module.exports = {
   ],
   mode: 'jit',
   theme: {
+    colors: {
+      primary1: '#ffbba0',
+      secondary: '#0b0a18',
+    },
     extend: {
       fontFamily: {
         Raleway: ['Raleway'],

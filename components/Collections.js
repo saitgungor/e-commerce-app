@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Collections = () => {
   return (
     <div className="w-full h-auto mt-12 text-center">
-      <h2 className="font-semibold text-4xl font-Narrow text-[#0b0a18] tracking-wider">
+      <h2 className="font-semibold text-4xl font-Narrow text-secondary1 tracking-wider">
         Koleksiyonumuz
       </h2>
       <div className="w-full flex h-[70vh] justify-between mt-12">
